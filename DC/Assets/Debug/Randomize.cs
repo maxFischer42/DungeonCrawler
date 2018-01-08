@@ -17,7 +17,7 @@ public class Randomize : MonoBehaviour
 	public GameObject Player;
 
 	void Start ()
-	{
+	{                                                                                                                                                
 
 		var numOfBlocks = buildingBlocks.Length;
 
