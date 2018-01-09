@@ -12,6 +12,7 @@ TagManager:
   - Elec
   - Dark
   - Ice
+  - Fire
   layers:
   - Default
   - TransparentFX
