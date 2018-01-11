@@ -200,7 +200,7 @@ RectTransform:
   m_GameObject: {fileID: 225600140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.21000001, y: 0.044609785, z: 90}
-  m_LocalScale: {x: 0.009259259, y: 0.009259259, z: 0.009259259}
+  m_LocalScale: {x: 0.009445206, y: 0.009445206, z: 0.009445206}
   m_Children:
   - {fileID: 1900555949}
   - {fileID: 444566192}
@@ -5725,7 +5725,7 @@ MonoBehaviour:
   - {fileID: 1998678258237400, guid: a8fdc3ebd1a3e344e84e4a96dd798854, type: 2}
   - {fileID: 1917327509141052, guid: 2a01b47d000121447bfa3620cf9e6711, type: 2}
   - {fileID: 1202142591277908, guid: 48f64fce7685a434f91a0d1309aeb73e, type: 2}
-  - {fileID: 1917327509141052, guid: 2a01b47d000121447bfa3620cf9e6711, type: 2}
+  - {fileID: 1954838450825656, guid: efe23e20292fe8841accb18506b93047, type: 2}
   - {fileID: 1917327509141052, guid: 2a01b47d000121447bfa3620cf9e6711, type: 2}
   - {fileID: 1954838450825656, guid: efe23e20292fe8841accb18506b93047, type: 2}
   - {fileID: 1363047982055862, guid: e887b58b1b40fae48be25174457f303c, type: 2}
@@ -5734,8 +5734,8 @@ MonoBehaviour:
   - {fileID: 1917327509141052, guid: 2a01b47d000121447bfa3620cf9e6711, type: 2}
   - {fileID: 1917327509141052, guid: 2a01b47d000121447bfa3620cf9e6711, type: 2}
   - {fileID: 1917327509141052, guid: 2a01b47d000121447bfa3620cf9e6711, type: 2}
-  - {fileID: 1917327509141052, guid: 2a01b47d000121447bfa3620cf9e6711, type: 2}
-  - {fileID: 1917327509141052, guid: 2a01b47d000121447bfa3620cf9e6711, type: 2}
+  - {fileID: 1209744504162848, guid: 4f1d2ae170dfc114f87d4ae4d5acd542, type: 2}
+  - {fileID: 1804406530483360, guid: c979d09564edc9b419daa0b94215d946, type: 2}
   - {fileID: 1363047982055862, guid: e887b58b1b40fae48be25174457f303c, type: 2}
   - {fileID: 1363047982055862, guid: e887b58b1b40fae48be25174457f303c, type: 2}
   - {fileID: 1363047982055862, guid: e887b58b1b40fae48be25174457f303c, type: 2}
