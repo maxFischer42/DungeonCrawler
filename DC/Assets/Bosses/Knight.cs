@@ -18,10 +18,11 @@ public class Knight : MonoBehaviour {
 	public RuntimeAnimatorController Move;
 	public RuntimeAnimatorController Attack;
 	public SpriteRenderer Sprt;
-	float attackstartspeed = 0.5f;
-	float attackSpeed = 1.2f;
+	public float attackstartspeed = 0.5f;
+	public float attackSpeed = 1.2f;
 	float timer = 0;
 	public GameObject SwordHitBox;
+
 
 	bool attacking = false;
 
@@ -34,39 +35,32 @@ public class Knight : MonoBehaviour {
 	void Update () {
 		if (attacking != true) {
 			target = GameObject.FindGameObjectWithTag ("Player");
+			Anim.runtimeAnimatorController = Move;
 			float distanceToPlayer = 0.0f;
 			Vector3 playerPosition = target.transform.position;
 			moveDirection = new Vector2 (playerPosition.x - transform.position.x, playerPosition.y - transform.position.y);
 			distanceToPlayer = moveDirection.magnitude;
-
+			gameObject.GetComponent<Rigidbody2D> ().velocity = moveDirection;
 
 			if (distanceToPlayer < chaseTriggerDistance) {
 				attack ();
 			}
 		} else {
+			gameObject.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
 			timer += Time.deltaTime;
 			if (timer >= attackstartspeed) {
 				SwordHitBox.GetComponent<BoxCollider2D> ().enabled = true;
 			} else if (timer >= attackSpeed) {
-				SwordHitBox.GetComponent<BoxCollider2D> ().enabled = true;
+				SwordHitBox.GetComponent<BoxCollider2D> ().enabled = false;
 				attacking = false;
 				timer = 0;
-			}
-
-			var vel = gameObject.GetComponent<Rigidbody2D> ().velocity;
-			if (vel.x == 0 && vel.y == 0) {
-				Anim.runtimeAnimatorController = Attack;
-			} else {
-				Anim.runtimeAnimatorController = Move;
-			}
-
-
-
+			}										
 		}
 	}
 
 	void attack()
 	{
 		attacking = true;
+		Anim.runtimeAnimatorController = Attack;
 	}
 }
